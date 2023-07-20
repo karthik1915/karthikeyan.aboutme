@@ -59,7 +59,7 @@ body {
       section .title div.large {
         padding-top: 10px;
         padding-bottom: 10px;
-        font-size: 8vh;
+        font-size: 6vh;
         line-height: 10vh;
         color: var(--headertext);
         -webkit-animation: byBottom 1s 0.25s ease both !important;
