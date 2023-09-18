@@ -62,6 +62,17 @@ document.addEventListener('DOMContentLoaded', function () {
         //  markers:true,
       },
     });
+    gsap.to('#projecthead', {
+      scale: 1.2,
+      scrollTrigger: {
+        // markers: true,
+        trigger: '#projecthead',
+        start: 'top+=4em 60%',
+        end: 'bottom center-=100',
+        toggleActions: 'play reverse play reverse',
+        //  markers:true,
+      },
+    });
 
     const elements = gsap.utils.toArray('.slide-in-content > p');
 
@@ -86,10 +97,28 @@ document.addEventListener('DOMContentLoaded', function () {
         end: 'bottom 100%',
         scrub: true,
       },
-      onComplete: () => {
-        console.log('yes');
-      },
+      // onComplete: () => {
+      //   console.log('yes');
+      // },
     });
+
+    var projectelement = gsap.utils.toArray('#items');
+
+    gsap.fromTo(
+      projectelement,
+      {
+        rotationY: '-60deg',
+      },
+      {
+        rotationY: '0deg',
+        scrollTrigger: {
+          trigger: '#items',
+          start: 'top 60%',
+          end: 'center 40%',
+          toggleActions: 'play none play reverse',
+        },
+      }
+    );
 
     var menu = document.querySelector('#menu');
 
