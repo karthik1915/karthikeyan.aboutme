@@ -261,6 +261,46 @@
             </li>
           </ul>
         </div>
+        <div id="items" class="project-items">
+          <h3>
+            <a href="https://welcome128.netlify.app">Welcome Landing Site</a>
+          </h3>
+          <p>
+            This React single page application contains a complex grid layouting
+            with lot of breakpoints for responsive look
+          </p>
+          <ul class="list-group" style="color: var(--headeralttext)">
+            <li
+              style="color: var(--headeralttext)"
+              class="list-group-item bg-transparent text-decoration-underline"
+            >
+              <a
+                style="color: var(--headeralttext)"
+                href="https://dribbble.com/shots/22283615-Tomorrow-Creative-Digital-Agency-Website"
+                target="_blank"
+                >Dribbble</a
+              >
+            </li>
+            <li
+              style="color: var(--headeralttext)"
+              class="list-group-item bg-transparent"
+            >
+              List of Offered Services
+            </li>
+            <li
+              style="color: var(--headeralttext)"
+              class="list-group-item bg-transparent"
+            >
+              Aesthetic Black Design
+            </li>
+            <li
+              style="color: var(--headeralttext)"
+              class="list-group-item bg-transparent"
+            >
+              GSAP
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -293,55 +333,55 @@
   </body>
 
   <script>
-    var imagefolder = 'aboutmeimg/';
+    var imagefolder = "aboutmeimg/";
 
-    document.getElementById('ig').src = imagefolder + 'instagram.png';
-    document.getElementById('discord').src = imagefolder + 'discord.png';
-    document.getElementById('tg').src = imagefolder + 'telegram.png';
-    document.getElementById('steam').src = imagefolder + 'steam.png';
-    document.getElementById('lkdin').src = imagefolder + 'linkedin.png';
-    document.getElementById('git').src = imagefolder + 'github.png';
+    document.getElementById("ig").src = imagefolder + "instagram.png";
+    document.getElementById("discord").src = imagefolder + "discord.png";
+    document.getElementById("tg").src = imagefolder + "telegram.png";
+    document.getElementById("steam").src = imagefolder + "steam.png";
+    document.getElementById("lkdin").src = imagefolder + "linkedin.png";
+    document.getElementById("git").src = imagefolder + "github.png";
 
     var windowScrolled;
-    window.addEventListener('scroll', function windowScroll() {
+    window.addEventListener("scroll", function windowScroll() {
       windowScrolled = window.pageYOffset;
-      document.getElementById('ParallaxContent').style.transform =
-        'translate3d(0, ' + windowScrolled / 2 + 'px, 0)';
+      document.getElementById("ParallaxContent").style.transform =
+        "translate3d(0, " + windowScrolled / 2 + "px, 0)";
     });
 
     function openig() {
-      window.open('https://www.instagram.com/kar_thik_op/', '_blank');
+      window.open("https://www.instagram.com/kar_thik_op/", "_blank");
     }
     function opendisc() {
-      window.open('https://www.discord.com/users/butcher4114', '_blank');
+      window.open("https://www.discord.com/users/butcher4114", "_blank");
     }
     function opengit() {
-      window.open('https://github.com/karthik1915', '_blank');
+      window.open("https://github.com/karthik1915", "_blank");
     }
     function openlkdin() {
       window.open(
-        'https://www.linkedin.com/in/karthikeyan-j-33151b206/',
-        '_blank'
+        "https://www.linkedin.com/in/karthikeyan-j-33151b206/",
+        "_blank"
       );
     }
     function opensteam() {
       window.open(
-        'https://steamcommunity.com/profiles/76561199184249633/',
-        '_blank'
+        "https://steamcommunity.com/profiles/76561199184249633/",
+        "_blank"
       );
     }
     function opentg() {
-      window.open('https://t.me/karthik1915', '_blank');
+      window.open("https://t.me/karthik1915", "_blank");
     }
 
-    var flkty = new Flickity('.contactcards', {
+    var flkty = new Flickity(".contactcards", {
       wrapAround: true,
       autoPlay: true,
       fade: true,
     });
 
     function getbackhome() {
-      window.open('https://karthik1915.github.io/karthikeyan/');
+      window.open("https://karthik1915.github.io/karthikeyan/");
     }
   </script>
 </html>
